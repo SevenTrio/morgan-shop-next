@@ -19,7 +19,9 @@
     "lint": "eslint --ignore-path .gitignore \"src/**/*.+(ts|js|tsx)\"",
     "format": "prettier --ignore-path .gitignore \"src/**/*.+(ts|js|tsx)\" --write",
     "postinstall": "husky install",
-    "commit": "cz"
+    "commit": "cz",
+    "build-storybook": "build-storybook",
+    "chromatic": "npx chromatic --project-token=39eba90f676d"
   },
   "lint-staged": {
     "./src/**/*.{ts,js,jsx,tsx}": [
@@ -38,6 +40,11 @@
   "devDependencies": {
     "@commitlint/cli": "13.1.0",
     "@commitlint/config-conventional": "13.1.0",
+    "@storybook/addon-actions": "6.3.8",
+    "@storybook/addon-docs": "6.3.8",
+    "@storybook/addon-essentials": "6.3.8",
+    "@storybook/addon-links": "6.3.8",
+    "@storybook/react": "6.3.8",
     "@svgr/webpack": "5.5.0",
     "@testing-library/dom": "8.2.0",
     "@testing-library/jest-dom": "5.14.1",
@@ -50,6 +57,7 @@
     "@types/styled-components": "5.1.14",
     "@typescript-eslint/eslint-plugin": "4.29.3",
     "@typescript-eslint/parser": "4.29.3",
+    "chromatic": "5.9.2",
     "commitizen": "4.2.4",
     "cz-conventional-changelog": "3.3.0",
     "eslint": "7.32.0",
