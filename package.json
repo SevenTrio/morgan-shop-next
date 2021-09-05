@@ -1,13 +1,11 @@
 {
-  "name": "typescript-nextjs-starter",
-  "description": "A TypeScript starter for Next.js that includes all you need to build amazing projects",
+  "name": "morgan-shop-next",
+  "description": "Furniture store project",
   "version": "1.0.0",
   "private": true,
-  "author": "João Pedro Schmitz <hey@joaopedro.dev> (@jpedroschmitz)",
-  "license": "MIT",
+  "author": "Dmitry Krykunov (@SevenTrio)",
   "keywords": [
     "nextjs",
-    "starter",
     "typescript"
   ],
   "scripts": {
