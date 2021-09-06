@@ -1,0 +1,515 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button component applies correct styles by default 1`] = `
+.c1 {
+  padding: 0;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #121212;
+  text-align: inherit;
+  -webkit-letter-spacing: 0.02em;
+  -moz-letter-spacing: 0.02em;
+  -ms-letter-spacing: 0.02em;
+  letter-spacing: 0.02em;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: auto;
+  height: 48px;
+  padding: 0 16px;
+  border: 1px solid #121212;
+  background-color: transparent;
+  -webkit-transition: background-color 0.2s linear;
+  transition: background-color 0.2s linear;
+  cursor: pointer;
+}
+
+.c0:hover {
+  background-color: #F0F0F0;
+}
+
+.c0:active {
+  background-color: #DEDEDE;
+}
+
+@media screen and (max-width:600px) {
+  .c0 {
+    height: 36px;
+    padding: 0 12px;
+  }
+}
+
+<button
+  class="c0"
+>
+  <p
+    class="c1"
+    color="textPrimary"
+  >
+    Lorem ipsum dolor.
+  </p>
+</button>
+`;
+
+exports[`Button component applies correct styles to wrapper component 1`] = `
+.c1 {
+  padding: 0;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #121212;
+  text-align: inherit;
+  -webkit-letter-spacing: 0.02em;
+  -moz-letter-spacing: 0.02em;
+  -ms-letter-spacing: 0.02em;
+  letter-spacing: 0.02em;
+}
+
+.c0 {
+  margin: 8px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: auto;
+  height: 48px;
+  padding: 0 16px;
+  border: 1px solid #121212;
+  background-color: transparent;
+  -webkit-transition: background-color 0.2s linear;
+  transition: background-color 0.2s linear;
+  cursor: pointer;
+}
+
+.c0:hover {
+  background-color: #F0F0F0;
+}
+
+.c0:active {
+  background-color: #DEDEDE;
+}
+
+@media screen and (max-width:600px) {
+  .c0 {
+    height: 36px;
+    padding: 0 12px;
+  }
+}
+
+<button
+  class="c0 Test"
+  style="display: none;"
+>
+  <p
+    class="c1"
+    color="textPrimary"
+  />
+</button>
+`;
+
+exports[`Button component applies correct styles with fullWidth prop 1`] = `
+.c1 {
+  padding: 0;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #121212;
+  text-align: inherit;
+  -webkit-letter-spacing: 0.02em;
+  -moz-letter-spacing: 0.02em;
+  -ms-letter-spacing: 0.02em;
+  letter-spacing: 0.02em;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 100%;
+  height: 48px;
+  padding: 0 16px;
+  border: 1px solid #121212;
+  background-color: transparent;
+  -webkit-transition: background-color 0.2s linear;
+  transition: background-color 0.2s linear;
+  cursor: pointer;
+}
+
+.c0:hover {
+  background-color: #F0F0F0;
+}
+
+.c0:active {
+  background-color: #DEDEDE;
+}
+
+@media screen and (max-width:600px) {
+  .c0 {
+    height: 36px;
+    padding: 0 12px;
+  }
+}
+
+<button
+  class="c0"
+>
+  <p
+    class="c1"
+    color="textPrimary"
+  />
+</button>
+`;
+
+exports[`Button component applies correct styles with secondary variant 1`] = `
+.c1 {
+  padding: 0;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #FAFAFA;
+  text-align: inherit;
+  -webkit-letter-spacing: 0.02em;
+  -moz-letter-spacing: 0.02em;
+  -ms-letter-spacing: 0.02em;
+  letter-spacing: 0.02em;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: auto;
+  height: 48px;
+  padding: 0 16px;
+  border: 1px solid #121212;
+  background-color: transparent;
+  -webkit-transition: background-color 0.2s linear;
+  transition: background-color 0.2s linear;
+  cursor: pointer;
+  border: none;
+  background-color: #121212;
+}
+
+.c0:hover {
+  background-color: #F0F0F0;
+}
+
+.c0:active {
+  background-color: #DEDEDE;
+}
+
+.c0:hover {
+  background-color: #424242;
+}
+
+.c0:active {
+  background-color: #6D6D6D;
+}
+
+@media screen and (max-width:600px) {
+  .c0 {
+    height: 36px;
+    padding: 0 12px;
+  }
+}
+
+<button
+  class="c0"
+>
+  <p
+    class="c1"
+    color="white"
+  >
+    Lorem ipsum dolor.
+  </p>
+</button>
+`;
+
+exports[`Button component renders correct tag by default 1`] = `
+.c1 {
+  padding: 0;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #121212;
+  text-align: inherit;
+  -webkit-letter-spacing: 0.02em;
+  -moz-letter-spacing: 0.02em;
+  -ms-letter-spacing: 0.02em;
+  letter-spacing: 0.02em;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: auto;
+  height: 48px;
+  padding: 0 16px;
+  border: 1px solid #121212;
+  background-color: transparent;
+  -webkit-transition: background-color 0.2s linear;
+  transition: background-color 0.2s linear;
+  cursor: pointer;
+}
+
+.c0:hover {
+  background-color: #F0F0F0;
+}
+
+.c0:active {
+  background-color: #DEDEDE;
+}
+
+@media screen and (max-width:600px) {
+  .c0 {
+    height: 36px;
+    padding: 0 12px;
+  }
+}
+
+<button
+  class="c0"
+>
+  <p
+    class="c1"
+    color="textPrimary"
+  />
+</button>
+`;
+
+exports[`Button component renders correct tag with component prop 1`] = `
+.c1 {
+  padding: 0;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #121212;
+  text-align: inherit;
+  -webkit-letter-spacing: 0.02em;
+  -moz-letter-spacing: 0.02em;
+  -ms-letter-spacing: 0.02em;
+  letter-spacing: 0.02em;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: auto;
+  height: 48px;
+  padding: 0 16px;
+  border: 1px solid #121212;
+  background-color: transparent;
+  -webkit-transition: background-color 0.2s linear;
+  transition: background-color 0.2s linear;
+  cursor: pointer;
+}
+
+.c0:hover {
+  background-color: #F0F0F0;
+}
+
+.c0:active {
+  background-color: #DEDEDE;
+}
+
+@media screen and (max-width:600px) {
+  .c0 {
+    height: 36px;
+    padding: 0 12px;
+  }
+}
+
+<a
+  class="c0"
+>
+  <p
+    class="c1"
+    color="textPrimary"
+  />
+</a>
+`;
+
+exports[`Button component renders correctly with children prop 1`] = `
+.c1 {
+  padding: 0;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #121212;
+  text-align: inherit;
+  -webkit-letter-spacing: 0.02em;
+  -moz-letter-spacing: 0.02em;
+  -ms-letter-spacing: 0.02em;
+  letter-spacing: 0.02em;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: auto;
+  height: 48px;
+  padding: 0 16px;
+  border: 1px solid #121212;
+  background-color: transparent;
+  -webkit-transition: background-color 0.2s linear;
+  transition: background-color 0.2s linear;
+  cursor: pointer;
+}
+
+.c0:hover {
+  background-color: #F0F0F0;
+}
+
+.c0:active {
+  background-color: #DEDEDE;
+}
+
+@media screen and (max-width:600px) {
+  .c0 {
+    height: 36px;
+    padding: 0 12px;
+  }
+}
+
+<button
+  class="c0"
+>
+  <p
+    class="c1"
+    color="textPrimary"
+  >
+    Lorem ipsum dolor.
+  </p>
+</button>
+`;
+
+exports[`Button component renders correctly without props 1`] = `
+.c1 {
+  padding: 0;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #121212;
+  text-align: inherit;
+  -webkit-letter-spacing: 0.02em;
+  -moz-letter-spacing: 0.02em;
+  -ms-letter-spacing: 0.02em;
+  letter-spacing: 0.02em;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: auto;
+  height: 48px;
+  padding: 0 16px;
+  border: 1px solid #121212;
+  background-color: transparent;
+  -webkit-transition: background-color 0.2s linear;
+  transition: background-color 0.2s linear;
+  cursor: pointer;
+}
+
+.c0:hover {
+  background-color: #F0F0F0;
+}
+
+.c0:active {
+  background-color: #DEDEDE;
+}
+
+@media screen and (max-width:600px) {
+  .c0 {
+    height: 36px;
+    padding: 0 12px;
+  }
+}
+
+<button
+  class="c0"
+>
+  <p
+    class="c1"
+    color="textPrimary"
+  />
+</button>
+`;
