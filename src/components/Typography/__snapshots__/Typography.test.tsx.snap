@@ -1,0 +1,175 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Typography component applies correct styles to wrapper component 1`] = `
+.c0 {
+  margin: 8px;
+  padding: 0;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #121212;
+  text-align: inherit;
+  font-weight: 500;
+}
+
+<p
+  class="c0 Test"
+  color="textPrimary"
+  style="display: none;"
+/>
+`;
+
+exports[`Typography component applies correct styles with align prop 1`] = `
+.c0 {
+  padding: 0;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #121212;
+  text-align: center;
+  font-weight: 500;
+}
+
+<p
+  class="c0"
+  color="textPrimary"
+/>
+`;
+
+exports[`Typography component applies correct styles with color prop 1`] = `
+.c0 {
+  padding: 0;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #6D6D6D;
+  text-align: inherit;
+  font-weight: 500;
+}
+
+<p
+  class="c0"
+  color="textSecondary"
+/>
+`;
+
+exports[`Typography component applies correct styles with variant prop 1`] = `
+.c0 {
+  padding: 0;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #121212;
+  text-align: inherit;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+<p
+  class="c0"
+  color="textPrimary"
+/>
+`;
+
+exports[`Typography component renders correct tag with both component and variant props 1`] = `
+.c0 {
+  padding: 0;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #121212;
+  text-align: inherit;
+  font-size: 0.75rem;
+  line-height: 1.6666666666;
+}
+
+@media screen and (max-width:600px) {
+  .c0 {
+    font-size: 0.625rem;
+    line-height: 1.6;
+  }
+}
+
+<h1
+  class="c0"
+  color="textPrimary"
+/>
+`;
+
+exports[`Typography component renders correct tag with component prop 1`] = `
+.c0 {
+  padding: 0;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #121212;
+  text-align: inherit;
+  font-weight: 500;
+}
+
+<h1
+  class="c0"
+  color="textPrimary"
+/>
+`;
+
+exports[`Typography component renders correct tag with variant prop 1`] = `
+.c0 {
+  padding: 0;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #121212;
+  text-align: inherit;
+  font-size: 0.75rem;
+  line-height: 1.6666666666;
+}
+
+@media screen and (max-width:600px) {
+  .c0 {
+    font-size: 0.625rem;
+    line-height: 1.6;
+  }
+}
+
+<span
+  class="c0"
+  color="textPrimary"
+/>
+`;
+
+exports[`Typography component renders correctly with children prop 1`] = `
+.c0 {
+  padding: 0;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #121212;
+  text-align: inherit;
+  font-weight: 500;
+}
+
+<p
+  class="c0"
+  color="textPrimary"
+>
+  Lorem ipsum dolor.
+</p>
+`;
+
+exports[`Typography component renders correctly without props 1`] = `
+.c0 {
+  padding: 0;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #121212;
+  text-align: inherit;
+  font-weight: 500;
+}
+
+<p
+  class="c0"
+  color="textPrimary"
+/>
+`;
