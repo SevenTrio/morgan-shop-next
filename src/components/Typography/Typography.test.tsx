@@ -32,7 +32,7 @@ describe(`Typography component`, () => {
       expect(tree).toHaveStyleRule(`font-weight`, `500`);
       expect(tree).toHaveStyleRule(`line-height`, `1.5`);
       expect(tree).toHaveStyleRule(`color`, theme.palette.text.primary);
-      expect(tree).not.toHaveStyleRule(`text-align`);
+      expect(tree).toHaveStyleRule(`text-align`, `inherit`);
       expect(tree).not.toHaveStyleRule(`overflow`);
       expect(tree).not.toHaveStyleRule(`white-space`);
       expect(tree).not.toHaveStyleRule(`text-overflow`);
