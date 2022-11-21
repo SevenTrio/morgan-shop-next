@@ -27,8 +27,8 @@ export const Button = forwardRef<HTMLButtonElement, IButtonProps>(
   (
     {
       children,
-      component = 'button',
-      variant = 'primary',
+      component = `button`,
+      variant = `primary`,
       fullWidth = false,
       ...restProps
     },
@@ -51,3 +51,5 @@ export const Button = forwardRef<HTMLButtonElement, IButtonProps>(
     );
   },
 );
+
+Button.displayName = `Button`;

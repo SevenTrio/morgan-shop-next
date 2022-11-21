@@ -68,14 +68,14 @@ describe(`Button component`, () => {
 
     test(`to wrapper component`, () => {
       const { container } = render(
-        <Button m={2} style={{ display: 'none' }} className="Test" />,
+        <Button m={2} style={{ display: `none` }} className="Test" />,
       );
       const tree = container.firstChild as HTMLElement;
 
       expect(tree).toMatchSnapshot();
       expect(tree).toHaveStyleRule(`margin`, `8px`);
-      expect(tree?.style.display).toBe('none');
-      expect(tree?.className.split(' ').includes('Test')).toBe(true);
+      expect(tree?.style.display).toBe(`none`);
+      expect(tree?.className.split(` `).includes(`Test`)).toBe(true);
     });
   });
 

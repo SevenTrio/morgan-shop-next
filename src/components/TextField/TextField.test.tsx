@@ -6,7 +6,7 @@ import { ITextFieldProps } from 'components/TextField/TextField.component';
 import TextField from 'components/TextField';
 
 const ControlledTextField: FC = (props?: Partial<ITextFieldProps>) => {
-  const [value, setValue] = useState('');
+  const [value, setValue] = useState(``);
 
   const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
     setValue(e.target.value);
@@ -18,7 +18,7 @@ const ControlledTextField: FC = (props?: Partial<ITextFieldProps>) => {
 const setupControlledTextField = (props?: Partial<ITextFieldProps>) => {
   const utils = render(<ControlledTextField aria-label="input" {...props} />);
 
-  const input = utils.getByLabelText('input') as HTMLInputElement;
+  const input = utils.getByLabelText(`input`) as HTMLInputElement;
 
   return {
     input,
@@ -29,7 +29,7 @@ const setupControlledTextField = (props?: Partial<ITextFieldProps>) => {
 const setupUncontrolledTextField = (props?: Partial<ITextFieldProps>) => {
   const utils = render(<TextField aria-label="input" {...props} />);
 
-  const input = utils.getByLabelText('input') as HTMLInputElement;
+  const input = utils.getByLabelText(`input`) as HTMLInputElement;
 
   return {
     input,
@@ -79,26 +79,26 @@ describe(`TextField component`, () => {
 
     test(`with type prop`, () => {
       const { container, input } = setupUncontrolledTextField({
-        type: 'password',
+        type: `password`,
       });
       const tree = container.firstChild;
 
       expect(tree).toMatchSnapshot();
-      expect(input.type).toBe('password');
+      expect(input.type).toBe(`password`);
     });
   });
 
   describe(`applies correct styles`, () => {
     test(`to wrapper component`, () => {
       const { container } = render(
-        <TextField m={2} style={{ display: 'none' }} className="Test" />,
+        <TextField m={2} style={{ display: `none` }} className="Test" />,
       );
       const tree = container.firstChild as HTMLElement;
 
       expect(tree).toMatchSnapshot();
       expect(tree).toHaveStyleRule(`margin`, `8px`);
-      expect(tree?.style.display).toBe('none');
-      expect(tree?.className.split(' ').includes('Test')).toBe(true);
+      expect(tree?.style.display).toBe(`none`);
+      expect(tree?.className.split(` `).includes(`Test`)).toBe(true);
     });
   });
 
@@ -109,7 +109,7 @@ describe(`TextField component`, () => {
       const tree = container.firstChild;
 
       expect(tree).toMatchSnapshot();
-      expect(input.value).toBe('');
+      expect(input.value).toBe(``);
       fireEvent.change(input, { target: { value: inputValue } });
       expect(input.value).toBe(inputValue);
     });
@@ -120,7 +120,7 @@ describe(`TextField component`, () => {
       const tree = container.firstChild;
 
       expect(tree).toMatchSnapshot();
-      expect(input.value).toBe('');
+      expect(input.value).toBe(``);
       fireEvent.change(input, { target: { value: inputValue } });
       expect(input.value).toBe(inputValue);
     });

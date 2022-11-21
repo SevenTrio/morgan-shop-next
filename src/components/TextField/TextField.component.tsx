@@ -50,13 +50,13 @@ export const TextField = forwardRef<HTMLInputElement, ITextFieldProps>(
       action,
       helperText,
       error = false,
-      type = 'text',
+      type = `text`,
       ...restProps
     },
     ref,
   ) => {
     const [showPassword, setShowPassword] = useState(false);
-    const isPasswordField = type === 'password';
+    const isPasswordField = type === `password`;
 
     const [wrapperStyles, inputProps] = separateStyles(restProps);
 
@@ -90,7 +90,7 @@ export const TextField = forwardRef<HTMLInputElement, ITextFieldProps>(
           <StyledInput
             id={id}
             ref={ref}
-            type={isPasswordField && !showPassword ? 'password' : 'text'}
+            type={isPasswordField && !showPassword ? `password` : `text`}
             error={error}
             isPasswordField={isPasswordField}
             {...inputProps}
@@ -110,7 +110,7 @@ export const TextField = forwardRef<HTMLInputElement, ITextFieldProps>(
         {helperText ? (
           <Typography
             variant="caption1"
-            color={error ? 'error' : 'textSecondary'}
+            color={error ? `error` : `textSecondary`}
           >
             {helperText}
           </Typography>
@@ -119,3 +119,5 @@ export const TextField = forwardRef<HTMLInputElement, ITextFieldProps>(
     );
   },
 );
+
+TextField.displayName = `TextField`;
