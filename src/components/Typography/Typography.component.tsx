@@ -47,9 +47,9 @@ export interface ITypographyProps
 export const Typography = forwardRef<HTMLParagraphElement, ITypographyProps>(
   (
     {
-      align = 'inherit',
-      color = 'textPrimary',
-      variant = 'body1',
+      align = `inherit`,
+      color = `textPrimary`,
+      variant = `body1`,
       component,
       noWrap = false,
       children,
@@ -186,3 +186,5 @@ export const Typography = forwardRef<HTMLParagraphElement, ITypographyProps>(
     }
   },
 );
+
+Typography.displayName = `Typography`;

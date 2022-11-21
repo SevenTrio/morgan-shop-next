@@ -12,26 +12,41 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
         with:
           fetch-depth: 0
 
-      - name: Set up Node
-        uses: actions/setup-node@v2
+      - name: Install pnpm
+        uses: pnpm/action-setup@v2.2.4
         with:
-          node-version: 14
+          version: 7
 
-      - name: Install dependencies (with cache)
-        uses: bahmutov/npm-install@HEAD
+      - name: Set up Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: lts/*
+          cache: 'pnpm'
+
+      - name: Install dependencies
+        run: pnpm install
 
       - name: Check types
-        run: yarn type-check
+        run: pnpm type-check
 
       - name: Check linting
-        run: yarn lint
+        run: pnpm lint
 
       - name: Run tests
-        run: yarn test
+        run: pnpm test
+
+        # 👇 Adds Chromatic as a step in the workflow
+      - name: Publish to Chromatic
+        uses: chromaui/action@v1
+        # Chromatic GitHub Action options
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          # 👇 Chromatic projectToken, refer to the manage page to obtain it.
+          projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
 
       - name: Check commits messages
-        uses: wagoid/commitlint-github-action@v4
+        uses: wagoid/commitlint-github-action@v5

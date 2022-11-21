@@ -11,9 +11,11 @@ interface ILogoProps extends ISpacingProps, HTMLAttributes<HTMLDivElement> {
 }
 
 export const Logo = forwardRef<HTMLDivElement, ILogoProps>(
-  ({ component = 'div', ...restProps }, ref) => (
+  ({ component = `div`, ...restProps }, ref) => (
     <StyledLogo as={component} ref={ref} {...restProps}>
       <StyledLogoIcon />
     </StyledLogo>
   ),
 );
+
+Logo.displayName = `Logo`;

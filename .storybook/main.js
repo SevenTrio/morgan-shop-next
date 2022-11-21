@@ -7,8 +7,13 @@ module.exports = {
   ],
   addons: [
     '@storybook/addon-links',
-    '@storybook/addon-essentials'
+    '@storybook/addon-essentials',
+    '@storybook/addon-interactions'
   ],
+  framework: '@storybook/react',
+  core: {
+    builder: '@storybook/builder-webpack5'
+  },
   webpackFinal: async (config) => {
     config.resolve.modules = [
       path.resolve(__dirname, '..', 'src'),
@@ -20,8 +25,7 @@ module.exports = {
 
     config.module.rules.push({
       test: /\.svg$/,
-      enforce: 'pre',
-      loader: ['@svgr/webpack'],
+      use: ['@svgr/webpack'],
     });
 
     return config;

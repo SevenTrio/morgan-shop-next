@@ -7,7 +7,7 @@ import { Normalize } from 'styled-normalize';
 import { GlobalStyle } from 'styles/global-styles';
 import { theme } from 'styles/theme';
 
-const AllTheProviders: FC = ({ children }) => (
+const AllTheProviders: FC<{ children: React.ReactNode }> = ({ children }) => (
   <ThemeProvider theme={theme}>
     <Normalize />
     <GlobalStyle />

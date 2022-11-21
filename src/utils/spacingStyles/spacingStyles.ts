@@ -4,13 +4,13 @@ import { ISpacingProps, spacingValue } from 'types/spacing.types';
 import spacing from 'utils/spacing';
 
 const getSpacing = (value: spacingValue) => {
-  if (typeof value === 'string') return value;
-  if (typeof value === 'number') return spacing(value);
+  if (typeof value === `string`) return value;
+  if (typeof value === `number`) return spacing(value);
 
   return null;
 };
 
-const defaultSpacingValue = '1em';
+const defaultSpacingValue = `1em`;
 
 export const spacingStyles = (props: ISpacingProps): CSSProp => css`
   ${props.m &&
