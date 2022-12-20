@@ -1,0 +1,55 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Divider component renders correctly with text prop 1`] = `
+.c0 {
+  position: relative;
+  height: 1px;
+  width: 100%;
+  margin: 0;
+  border: none;
+  border-bottom: 1px solid #DEDEDE;
+}
+
+.c0:after {
+  content: 'Lorem ipsum dolor.';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  padding: 0 8px;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  z-index: 1;
+  font-size: 0.875rem;
+  line-height: 1.6;
+  color: #DEDEDE;
+  background-color: #FAFAFA;
+}
+
+@media screen and (max-width:600px) {
+  .c0:after {
+    padding: 0 4px;
+    font-size: 0.625rem;
+  }
+}
+
+<div
+  class="c0"
+/>
+`;
+
+exports[`Divider component renders correctly without props 1`] = `
+.c0 {
+  position: relative;
+  height: 1px;
+  width: 100%;
+  margin: 0;
+  border: none;
+  border-bottom: 1px solid #DEDEDE;
+}
+
+<div
+  class="c0"
+/>
+`;
